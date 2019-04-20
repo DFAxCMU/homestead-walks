@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Eric Li">
+	<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
+	<!-- font -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	
+	<!--css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+	<title>Homestead Walks</title>
+</head>
+<body>
+	<h1>Homestead Walks</h1>
+	<div class="content">
+		<form>
+		  	<div class="row">
+		    	<div class="six columns">
+		      	<label for="Name">Your Name</label>
+		      	<input class="u-full-width" type="text" placeholder="Gialo K" id="Name">
+		    	</div>
+		    <div class="six columns">
+		      <label for="Gender">Gender</label>
+		      <select class="u-full-width" id="Gender">
+		        <option value="Option 1">Male</option>
+		        <option value="Option 2">Female</option>
+		        <option value="Option 3">owo</option>
+		      </select>
+		    </div>
+		  	</div>
+		  	<input class="button-primary" type="submit" value="Submit">
+		</form>
+	</div>	
+
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCKD2-C2uwANgPPQkjxsITHAP10HuiXyu4",
+			authDomain: "userproftest.firebaseapp.com",
+			databaseURL: "https://userproftest.firebaseio.com",
+			projectId: "userproftest",
+			storageBucket: "userproftest.appspot.com",
+			messagingSenderId: "369042091249"
+		};
+		firebase.initializeApp(config);
+		const db = firebase.firestore();
+	</script>
+</body>
+</html>
